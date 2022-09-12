@@ -1,0 +1,14 @@
+.portfolio-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: calc(-1 * $margin-indent);
+  margin-top: calc(-1 * $margin-indent);
+}
+
+.portfolio-item {
+  width: calc(100% / 3 - 30px);
+  margin-left: $margin-indent;
+  margin-top: $margin-indent;
+
+  background-color: $main-color;
+}

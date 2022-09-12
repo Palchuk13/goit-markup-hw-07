@@ -1,0 +1,48 @@
+.button {
+  border-radius: 4px;
+  border-color: transparent;
+  cursor: pointer;
+
+  text-align: center;
+  font-size: 16px;
+}
+
+.hero-button {
+  margin-bottom: 0;
+  padding: 10px 32px;
+
+  font-weight: 700;
+  line-height: 1.875;
+  letter-spacing: 0.06em;
+  color: $main-color;
+  background-color: $accent-color;
+
+  transition: background-color $animation;
+
+  &:focus,
+  &:hover {
+    background: #188ce8;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  }
+}
+
+.filter-btn {
+  padding: 6px 22px;
+  text-align: center;
+
+  color: $title-text-color;
+  font-weight: 500;
+  line-height: 1.625;
+  letter-spacing: 0.03em;
+  background-color: #f5f4fa;
+
+  transition: background-color $animation, color $animation, box-shadow $animation;
+
+  &:focus,
+  &:hover {
+    color: $main-color;
+    background-color: $accent-color;
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+      0px 2px 2px rgba(0, 0, 0, 0.12);
+  }
+}
