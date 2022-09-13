@@ -43,11 +43,12 @@
   &:hover,
   &:focus {
     border-color: $accent-color;
+  }
 
-    &:hover + .modal-icon,
-    &:focus .modal-icon {
-      fill: $accent-color;
-    }
+
+  &:hover+.modal-icon,
+  &:focus+.modal-icon {
+    fill: $accent-color;
   }
 }
 
@@ -103,7 +104,7 @@
   clip: rect(0 0 0 0);
   clip-path: inset(50%);
 
-  &:checked + .checkbox-icon {
+  &:checked+.checkbox-icon {
     background-image: url(../images/check.svg);
     background-color: $accent-color;
     border-color: transparent;
@@ -125,7 +126,7 @@
   transition: box-shadow $animation;
 }
 
-.checkbox-input:focus + .checkbox-icon {
+.checkbox-input:focus+.checkbox-icon {
   box-shadow: 0 0 0 2px $accent-color;
   border-radius: 2px;
   width: 16px;

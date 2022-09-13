@@ -9,17 +9,15 @@
 
   opacity: 1;
   transition: opacity $animation, visibility $animation;
-}
 
-.is-hiden {
-  visibility: hidden;
-  opacity: 0;
-  pointer-events: none;
-
-  & .modal {
-    transform: translate(-50%, -50%) scale(0.8);
+  .is-hiden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
   }
 }
+
+
 
 .modal {
   position: absolute;
@@ -39,6 +37,10 @@
 
   transform: translate(-50%, -50%) scale(1);
   transition: transform $animation;
+
+  .backdrop.is-hidden & {
+    transform: translate(-50%, -50%) scale(0.8);
+  }
 }
 
 .modal-close {

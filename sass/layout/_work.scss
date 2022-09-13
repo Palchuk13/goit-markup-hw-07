@@ -1,0 +1,42 @@
+.work {
+  padding-bottom: $padding-indent;
+  text-align: center;
+}
+
+.work__title {
+  margin-bottom: 50px;
+  font-size: 36px;
+  line-height: 1.16;
+}
+
+.work__list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.work__item {
+  position: relative;
+
+  margin-right: $margin-indent;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.work__dsc {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70px;
+  height: 70px;
+  width: 100%;
+  bottom: 0;
+  background: rgba(47, 48, 58, 0.8);
+  color: $main-color;
+  font-size: 14px;
+  line-height: 1.14;
+  text-align: center;
+  text-transform: uppercase;
+}

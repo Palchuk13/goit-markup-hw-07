@@ -1,0 +1,46 @@
+.client {
+  padding-top: $padding-indent;
+  padding-bottom: 85px;
+
+  text-align: center;
+}
+
+.client__title {
+  margin-bottom: 50px;
+
+  font-size: 36px;
+  line-height: 1.16;
+}
+
+.client__list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: auto;
+  margin-left: auto;
+}
+.client__item {
+  margin-right: $margin-indent;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.company__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 170px;
+  height: 92px;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  fill: $icon-color;
+
+  transition: fill $animation, border-color $animation;
+
+  &:hover,
+  &:focus {
+    border-color: $accent-color;
+    fill: $accent-color;
+  }
+}

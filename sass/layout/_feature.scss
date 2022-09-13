@@ -1,0 +1,41 @@
+.feature {
+  padding-top: $padding-indent;
+  padding-bottom: $padding-indent;
+}
+
+.feature__list {
+  display: flex;
+  flex-wrap: wrap;
+}
+.feature__item {
+  width: 270px;
+  margin-right: $margin-indent;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.feature__bgd {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 270px;
+  height: 120px;
+
+  border-radius: 4px;
+  margin-bottom: $margin-indent;
+  background-color: $secondary-bg-color;
+}
+
+.feature__title {
+  margin-bottom: 10px;
+
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+}
+
+.feature__desc {
+  line-height: 1.71;
+}

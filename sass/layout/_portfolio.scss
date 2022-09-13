@@ -1,0 +1,33 @@
+.filter {
+  padding-top: $padding-indent;
+  padding-bottom: $padding-indent;
+}
+
+.filter__list {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.filter__item {
+  margin-right: 8px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.portfolio__list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: calc(-1 * $margin-indent);
+  margin-top: calc(-1 * $margin-indent);
+}
+
+.portfolio__item {
+  width: calc(100% / 3 - 30px);
+  margin-left: $margin-indent;
+  margin-top: $margin-indent;
+
+  background-color: $main-color;
+}
