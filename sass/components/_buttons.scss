@@ -41,11 +41,11 @@
   margin-left: 10px;
 }
 
-.modal-button {
+.modal__button {
   @include centeredFlex();
 }
 
-.button-send {
+.modal__button--send {
   @extend %button;
   padding: 10px 52px;
 

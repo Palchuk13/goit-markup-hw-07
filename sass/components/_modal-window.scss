@@ -10,14 +10,12 @@
   opacity: 1;
   transition: opacity $animation, visibility $animation;
 
-  .is-hiden {
+  &.is-hidden {
     opacity: 0;
     visibility: hidden;
     pointer-events: none;
   }
 }
-
-
 
 .modal {
   position: absolute;
@@ -35,22 +33,25 @@
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
 
-  transform: translate(-50%, -50%) scale(1);
-  transition: transform $animation;
 
-  .backdrop.is-hidden & {
+  transform: translate(-50%, -50%) scale(1);
+  transition: transform $animation visibility $animation;
+
+  .is-hidden & {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
     transform: translate(-50%, -50%) scale(0.8);
   }
+
 }
 
-.modal-close {
+.modal__close {
   position: absolute;
   top: 8px;
   right: 8px;
 
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  @include centeredFlex();
 
   width: 30px;
   height: 30px;
@@ -71,7 +72,7 @@
   }
 }
 
-.modal-dsc {
+.modal__dsc {
   margin-bottom: 12px;
 
   font-weight: 700;

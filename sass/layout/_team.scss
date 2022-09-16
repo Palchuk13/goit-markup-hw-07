@@ -40,11 +40,10 @@
 }
 
 .content__title {
-  @extend %sectiol-title;
+  @extend %section-title;
 
   margin-bottom: 10px;
 
-  color: $title-text-color;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.18;

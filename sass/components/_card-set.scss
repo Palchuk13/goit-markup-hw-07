@@ -1,4 +1,6 @@
 .card__link {
+  @extend %link;
+
   display: block;
 
   &:hover,
@@ -20,9 +22,10 @@
 }
 
 .card__title {
+  @extend %section-title;
+
   margin-bottom: 4px;
 
-  font-weight: 700;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
@@ -33,10 +36,12 @@
   font-size: 16px;
   line-height: 1.875;
 }
+
 .card__thumb {
   position: relative;
   overflow: hidden;
 }
+
 .overlay {
   content: '';
   position: absolute;

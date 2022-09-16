@@ -1,9 +1,12 @@
 .worker-social {
+  @extend %list;
+
   display: flex;
   margin-right: auto;
   margin-left: auto;
   padding: 0 32px 30px;
 }
+
 .worker-social__item {
   margin-right: 10px;
 
@@ -13,9 +16,9 @@
 }
 
 .worker-social__link {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @extend %link;
+  @include centeredFlex();
+
   width: 44px;
   height: 44px;
   border-radius: 50%;
@@ -31,6 +34,8 @@
 }
 
 .footer-social__list {
+  @extend %list;
+
   display: flex;
   margin-right: auto;
   margin-left: auto;
@@ -45,9 +50,9 @@
 }
 
 .footer-social__link {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @extend %link;
+  @include centeredFlex();
+
   width: 44px;
   height: 44px;
   border-radius: 50%;
