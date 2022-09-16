@@ -1,4 +1,6 @@
 .logo {
+  @extend %link;
+
   display: block;
 
   color: $title-text-color;
@@ -13,6 +15,8 @@
 }
 
 .footer__logo {
+  @extend %link;
+
   margin-bottom: 20px;
   margin-right: 0;
 

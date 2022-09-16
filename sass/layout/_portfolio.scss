@@ -4,8 +4,9 @@
 }
 
 .filter__list {
-  display: flex;
-  justify-content: center;
+  @extend %list;
+  @include centeredFlex();
+
   margin-bottom: 50px;
 }
 
@@ -18,6 +19,8 @@
 }
 
 .portfolio__list {
+  @extend %list;
+
   display: flex;
   flex-wrap: wrap;
   margin-left: calc(-1 * $margin-indent);

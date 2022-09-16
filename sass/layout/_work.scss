@@ -4,12 +4,16 @@
 }
 
 .work__title {
+  @extend %section-title;
+
   margin-bottom: 50px;
   font-size: 36px;
   line-height: 1.16;
 }
 
 .work__list {
+  @extend %list;
+
   display: flex;
   flex-wrap: wrap;
 }
@@ -26,9 +30,9 @@
 
 .work__dsc {
   position: absolute;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+
+  @include centeredFlex();
+
   height: 70px;
   height: 70px;
   width: 100%;
@@ -37,6 +41,5 @@
   color: $main-color;
   font-size: 14px;
   line-height: 1.14;
-  text-align: center;
   text-transform: uppercase;
 }

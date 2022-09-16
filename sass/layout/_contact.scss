@@ -1,8 +1,12 @@
 .contact {
-  display: flex;
   margin-left: auto;
-  align-items: center;
 }
+
+.contact__list {
+  @extend %list;
+  @include centeredFlex();
+}
+
 
 .contact__item {
   margin-right: 50px;
@@ -13,10 +17,11 @@
 }
 
 .contact__link {
-  display: flex;
+  @extend %link;
+
   padding-top: 32px;
   padding-bottom: 32px;
-  align-items: center;
+
 
   color: $main-text-color;
   font-weight: 500;

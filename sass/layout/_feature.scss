@@ -4,9 +4,12 @@
 }
 
 .feature__list {
+  @extend %list;
+
   display: flex;
   flex-wrap: wrap;
 }
+
 .feature__item {
   width: 270px;
   margin-right: $margin-indent;
@@ -17,9 +20,8 @@
 }
 
 .feature__bgd {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  @include centeredFlex();
+
   width: 270px;
   height: 120px;
 
@@ -29,6 +31,8 @@
 }
 
 .feature__title {
+  @extend %section-title;
+
   margin-bottom: 10px;
 
   font-size: 14px;

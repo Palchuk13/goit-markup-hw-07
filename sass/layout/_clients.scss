@@ -6,6 +6,7 @@
 }
 
 .client__title {
+  @extend %section-title;
   margin-bottom: 50px;
 
   font-size: 36px;
@@ -13,11 +14,14 @@
 }
 
 .client__list {
+  @extend %list;
+
   display: flex;
   flex-wrap: wrap;
   margin-right: auto;
   margin-left: auto;
 }
+
 .client__item {
   margin-right: $margin-indent;
 
@@ -27,9 +31,9 @@
 }
 
 .company__link {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @extend %link;
+  @include centeredFlex();
+
   width: 170px;
   height: 92px;
   border: 1px solid #afb1b8;

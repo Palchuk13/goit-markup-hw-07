@@ -5,7 +5,18 @@
   text-align: center;
 }
 
+.teams__title {
+  @extend %section-title;
+
+  margin-bottom: 50px;
+  font-size: 36px;
+  line-height: 1.16;
+
+}
+
 .team__list {
+  @extend %list;
+
   display: flex;
   flex-wrap: wrap;
 }
@@ -22,14 +33,18 @@
     margin-right: 0;
   }
 }
+
 .content {
   padding-top: 30px;
   padding-bottom: 16px;
 }
 
 .content__title {
+  @extend %sectiol-title;
+
   margin-bottom: 10px;
 
+  color: $title-text-color;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.18;
